@@ -11,6 +11,7 @@
 		9F60A6D22B75964600027624 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60A6D12B75964600027624 /* ContentView.swift */; };
 		9F60A6D42B75964700027624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F60A6D32B75964700027624 /* Assets.xcassets */; };
 		9F60A6D72B75964800027624 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F60A6D62B75964800027624 /* Preview Assets.xcassets */; };
+		9F60A6E02B75A4E300027624 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60A6DF2B75A4E300027624 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9F60A6D62B75964800027624 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F60A6DD2B759FD400027624 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		9F60A6DE2B75A09100027624 /* CitySights-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CitySights-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		9F60A6DF2B75A4E300027624 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				9F60A6DE2B75A09100027624 /* CitySights-App-Info.plist */,
 				9F60A6CF2B75964600027624 /* CitySights_AppApp.swift */,
 				9F60A6D12B75964600027624 /* ContentView.swift */,
+				9F60A6DF2B75A4E300027624 /* DataService.swift */,
 				9F60A6DD2B759FD400027624 /* Config.xcconfig */,
 				9F60A6D32B75964700027624 /* Assets.xcassets */,
 				9F60A6D52B75964800027624 /* Preview Content */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F60A6E02B75A4E300027624 /* DataService.swift in Sources */,
 				9F60A6D22B75964600027624 /* ContentView.swift in Sources */,
 				9F60A6D02B75964600027624 /* CitySights_AppApp.swift in Sources */,
 			);

@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var yelpSearch: String = ""
+    var service = DataService()
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, stranger!")
+        HStack {
+            TextField("What are you looking for?", text: $yelpSearch)
+            Button {
+                
+            } label: {
+                Text("Go")
+                    .padding()
+            }
         }
         .padding()
+        .task {
+            await service.businessSearch()
+        }
     }
 }
 
