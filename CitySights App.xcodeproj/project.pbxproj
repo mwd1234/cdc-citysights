@@ -12,6 +12,8 @@
 		9F60A6D42B75964700027624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F60A6D32B75964700027624 /* Assets.xcassets */; };
 		9F60A6D72B75964800027624 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F60A6D62B75964800027624 /* Preview Assets.xcassets */; };
 		9F60A6E02B75A4E300027624 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60A6DF2B75A4E300027624 /* DataService.swift */; };
+		9F60A6E22B75B2E800027624 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60A6E12B75B2E800027624 /* BusinessSearch.swift */; };
+		9F60A6E52B75B33F00027624 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F60A6E42B75B33F00027624 /* Business.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		9F60A6DD2B759FD400027624 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		9F60A6DE2B75A09100027624 /* CitySights-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "CitySights-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9F60A6DF2B75A4E300027624 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		9F60A6E12B75B2E800027624 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
+		9F60A6E42B75B33F00027624 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 				9F60A6CF2B75964600027624 /* CitySights_AppApp.swift */,
 				9F60A6D12B75964600027624 /* ContentView.swift */,
 				9F60A6DF2B75A4E300027624 /* DataService.swift */,
+				9F60A6E32B75B30E00027624 /* Model */,
 				9F60A6DD2B759FD400027624 /* Config.xcconfig */,
 				9F60A6D32B75964700027624 /* Assets.xcassets */,
 				9F60A6D52B75964800027624 /* Preview Content */,
@@ -72,6 +77,15 @@
 				9F60A6D62B75964800027624 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9F60A6E32B75B30E00027624 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F60A6E12B75B2E800027624 /* BusinessSearch.swift */,
+				9F60A6E42B75B33F00027624 /* Business.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +159,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F60A6E02B75A4E300027624 /* DataService.swift in Sources */,
+				9F60A6E22B75B2E800027624 /* BusinessSearch.swift in Sources */,
 				9F60A6D22B75964600027624 /* ContentView.swift in Sources */,
+				9F60A6E52B75B33F00027624 /* Business.swift in Sources */,
 				9F60A6D02B75964600027624 /* CitySights_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
