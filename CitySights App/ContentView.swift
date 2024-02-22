@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var businesses = [Business]()
-    @State var yelpSearch: String = ""
-    @State var selectedBusiness: Business?
-    var service = DataService()
-    
+
+    @Environment(BusinessModel.self) var businessModel
     
     var body: some View {
+        
+        @Bindable var businessModel = businessModel
+        
         VStack {
             
             HStack {
-                TextField("What are you looking for?", text: $yelpSearch)
+                TextField("What are you looking for?", text: $businessModel.yelpSearch)
                 Button {
                     
                 } label: {
@@ -28,7 +28,7 @@ struct ContentView: View {
             }
             
             List {
-                ForEach(businesses) { business in
+                ForEach(businessModel.businesses) { business in
                     VStack (spacing: 20) {
                         
                         HStack (spacing: 0) {
@@ -48,18 +48,18 @@ struct ContentView: View {
                         Divider()
                     }
                     .onTapGesture {
-                        selectedBusiness = business
+                        businessModel.selectedBusiness = business
                     }
                 }
                 .listRowSeparator(.hidden)
             }
             .listStyle(.plain)
         }
-        .task {
-            businesses = await service.businessSearch()
+        .onAppear {
+            businessModel.getBusinesses()
         }
-        .sheet(item: $selectedBusiness) { item in
-            BusinessDetailView(business: item)
+        .sheet(item: $businessModel.selectedBusiness) { item in
+            BusinessDetailView()
         }
     }
 }

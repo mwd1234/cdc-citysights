@@ -19,7 +19,7 @@ struct DataService {
         }
         
         // 1. Create URL
-        if let url = URL(string: "https://api.yelp.com/v3/businesses/search?latitude=35.665517&longitude=139.770398&categories=restaurants&limit=10") {
+        if let url = URL(string: "https://api.yelp.com/v3/businesses/search?latitude=35.665517&longitude=139.770398&categories=restaurants&limit=12") {
             // 2. Create request
             var request = URLRequest(url: url)
             request.addValue("Bearer \(apiKey!)", forHTTPHeaderField: "Authorization")
